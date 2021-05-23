@@ -1,3 +1,7 @@
+if game.SinglePlayer() then
+	return
+end
+
 util.AddNetworkString("serverside_bloodimpacts")
 
 local maxplayers_bits = math.ceil(math.log(game.MaxPlayers()) / math.log(2))

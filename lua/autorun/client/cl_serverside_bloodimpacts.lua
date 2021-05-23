@@ -1,3 +1,7 @@
+if game.SinglePlayer() then
+	return
+end
+
 local hblood = GetConVar("violence_hblood"):GetBool()
 
 cvars.AddChangeCallback("violence_hblood", function(_,_, new)
